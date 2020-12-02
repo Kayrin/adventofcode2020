@@ -9,6 +9,6 @@ let fs = require('fs')
 fs.readFile('./input/' + filename, 'utf8', function (err, data) {
   if (err) throw err;
   // console.log(data);
-  let cmd = require(`./${filename}.js`)
+  let cmd = require(`./src/${filename}.js`)
   cmd.run(data);
 });
