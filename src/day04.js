@@ -18,7 +18,6 @@ const validateFields = (fields) => {
   if (!(/^#[0-9a-f]{6}$/.test(fields.hcl))) return false;
   if (!(/^(amb|blu|brn|gry|grn|hzl|oth)$/.test(fields.ecl))) return false;
   if (!(/^[0-9]{9}$/.test(fields.pid))) return false;
-  console.log(fields.hgt)
   return true;
 };
 
